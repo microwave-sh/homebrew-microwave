@@ -5,20 +5,20 @@
 class Microwave < Formula
   desc "Command-line interface for the Microwave API"
   homepage "https://microwave.sh"
-  version "1.5.1"
+  version "1.6.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/microwave-sh/microwave-cli/releases/download/v1.5.1/microwave_1.5.1_darwin_amd64.tar.gz"
-      sha256 "c912ac6f4983f6a94a60d46d58e48b3889591f58c0de4c9c9755b8fec23f7a06"
+      url "https://github.com/microwave-sh/microwave-cli/releases/download/v1.6.0/microwave_1.6.0_darwin_amd64.tar.gz"
+      sha256 "cffe5e7e83ef21f5f7889b4d5cbe680726976f4a66ac59e48a6f8ad515de0983"
 
       define_method(:install) do
         bin.install "microwave"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/microwave-sh/microwave-cli/releases/download/v1.5.1/microwave_1.5.1_darwin_arm64.tar.gz"
-      sha256 "36c1c53716a5b48b8b66dab41dcb6535e8caa18ee11d643998724df8d7cccde8"
+      url "https://github.com/microwave-sh/microwave-cli/releases/download/v1.6.0/microwave_1.6.0_darwin_arm64.tar.gz"
+      sha256 "e6cbc03a71ebe10f9f8c0a403f6188350751b76eb5aecf1e931dfb9f02b416b8"
 
       define_method(:install) do
         bin.install "microwave"
@@ -28,15 +28,15 @@ class Microwave < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/microwave-sh/microwave-cli/releases/download/v1.5.1/microwave_1.5.1_linux_amd64.tar.gz"
-      sha256 "4ce68310b3b57f5649c7e5b8659816bb9a678e82cd7a32476343115fb2e3f517"
+      url "https://github.com/microwave-sh/microwave-cli/releases/download/v1.6.0/microwave_1.6.0_linux_amd64.tar.gz"
+      sha256 "0b377884f1e67b56b3c8683a9cd7963098e8fab587bf044181676e7c62169dd0"
       define_method(:install) do
         bin.install "microwave"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/microwave-sh/microwave-cli/releases/download/v1.5.1/microwave_1.5.1_linux_arm64.tar.gz"
-      sha256 "f9fc1b0a63f4aa9a79a444c8872aa175791f91b546c5901d21768ac41bdb97ac"
+      url "https://github.com/microwave-sh/microwave-cli/releases/download/v1.6.0/microwave_1.6.0_linux_arm64.tar.gz"
+      sha256 "48ef1c7847ad3c643079145ec7ed698e21be24ad0baf806a7c55aab8087ab43a"
       define_method(:install) do
         bin.install "microwave"
       end
